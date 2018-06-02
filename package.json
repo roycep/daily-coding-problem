@@ -1,0 +1,30 @@
+{
+  "name": "daily-coding-problem",
+  "version": "1.0.0",
+  "description": "Javascript solutions to dailycodingproblem",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roycep/daily-coding-problem.git"
+  },
+  "keywords": [
+    "javascript",
+    "daily",
+    "coding",
+    "problem",
+    "algorithms"
+  ],
+  "author": "Royce Puzon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roycep/daily-coding-problem/issues"
+  },
+  "homepage": "https://github.com/roycep/daily-coding-problem#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
+}
