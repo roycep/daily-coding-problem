@@ -1,4 +1,4 @@
-const generateTest = ({inputs, solution, algorithm}) => {
+const generateTest = ({inputs, solution, algorithm, tests}) => {
   /*
    * Test is an ordered array of object inputs
    * Each input key will be used to generate a test message
@@ -23,7 +23,17 @@ const generateTest = ({inputs, solution, algorithm}) => {
   test(testString, ()=>{
     const received = algorithm(...inputArray);
     const expected = solution;
-    expect(received).toBe(expected);
+
+    for (const matcher of tests) {
+      switch(matcher) {
+        case 'toBe':
+          expect(received).toBe(expected);
+          break;
+        case 'toEqual':
+          expect(received).toEqual(expected);
+          break;
+      }
+    }
   });
 };
 
